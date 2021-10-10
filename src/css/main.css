@@ -1,0 +1,227 @@
+html{
+    scroll-behavior: smooth;
+    
+}
+
+html::-webkit-scrollbar {
+    display: none;
+}
+
+
+
+body {
+    position: relative;
+
+    /* COLORS */
+    --background: #FFE194;
+    --secondary: #E8F6EF;
+    --secondary-dark: #B8DFD8;
+    --color: #4C4C6D;
+    
+    font-family: "Sora", sans-serif;
+    color: var(--color);
+    overflow-x: hidden;
+    background-color: var(--secondary);
+}
+
+
+nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    display: flex;
+    flex-direction: row-reverse;
+    text-align: right;
+}
+
+nav a{
+    display: block;
+    padding: 16px;
+    font-size: 1.2em;
+    color: var(--color);
+}
+
+nav a:hover, nav a:focus{
+    background-color: rgba(0.2, 0.2, 0.2, 0.1);
+    text-decoration: none;
+}
+
+#main-section{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--background);
+    height: 70vh;
+}
+
+.btn-line {
+    border: solid 1px var(--color);
+    color: var(--color);
+    padding: 5px;
+    margin: 10px 10px;
+    background: none;
+    transition: all 200ms;
+}
+
+.btn-line:hover{
+    color: var(--secondary);
+    border: solid 1px var(--color);
+    background-color: var(--color);
+}
+
+h1{
+    font-size: 5em;
+}
+
+.logo {
+    position: absolute;
+    left: 0px;
+    font-size: 1.5em;
+    border: none;
+    background: none;
+    padding: 10px 20px;
+}
+
+.logo sup{
+    font-size: 0.6em;
+}
+
+.lead-button {
+    position: absolute;
+    bottom: 40px;
+    padding: 10px;
+    font-size: 1.3em;
+}
+
+section {
+    padding: 10px;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    row-gap: 25px;
+    column-gap: 10px;
+    margin: 10px;
+}
+
+@media only screen and (max-width: 600px){
+    .card-container {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+}
+
+.card {
+    width: 300px;
+}
+
+.card-header {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.card-logo {
+    font-size: 3em;
+    margin: 3px;
+}
+
+.quote {
+    margin: 40px 10px; padding: 10px;
+    max-width: 90ch;
+    margin: 10px auto;
+    background-color: var(--secondary-dark);
+    border-radius: 5px;
+}
+
+.quote-body{
+    font-size: 1.5em;
+    margin: 5px 0 10px 0;
+}
+
+.quote-mark {
+    font-size: 2em;
+}
+
+.quote-author {
+    font-size: 1.1em;
+}
+
+footer {
+    text-align: center;
+    padding: 26px;
+}
+
+
+.price-container {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    gap: 40px;
+    margin: 30px;
+}
+
+@media only screen and (max-width: 600px){
+    .price-container {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+}
+
+.price-tile {
+    position: relative;
+    background-color: var(--background);
+    border-radius: 5px;
+    height: 300px;
+    width: 300px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 0 16px -10px var(--color);
+}
+
+.price-body {
+    font-size: 1.1em;
+    text-align: left;
+
+}
+.price-action {
+    position: absolute;
+    font-size: 1.2em;
+    width: 120px;
+    bottom: 10px;
+    left: 80px;
+}
+
+.offer {
+    display: grid;
+    grid-template-columns: 1fr 200px;
+    align-items: center;
+    max-width: 80ch;
+    min-height: 60px;
+    margin: auto;
+    background-color: var(--background);
+    padding: 26px;
+    border-radius: 5px;
+}
+
+.offer p {
+    position: relative;
+    top: 5px;
+    font-size: 1.3em;
+}
+
+.offer button {
+    padding: 8px;
+}
+
+.icons {
+    text-align: right;
+    max-width: 27ch;
+    font-size: 3em;
+    margin: auto;
+    margin-top: 20px;
+}
